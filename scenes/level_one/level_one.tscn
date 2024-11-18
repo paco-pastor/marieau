@@ -20,5 +20,9 @@ scale = Vector2(2.36719, 0.1875)
 texture = ExtResource("2_dpdtw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 3)
+offset = Vector2(0, 100)
+zoom = Vector2(4, 4)
 
 [node name="Player" parent="." instance=ExtResource("2_5cylv")]
+position = Vector2(5, 116)

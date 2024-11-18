@@ -1,17 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://cnwt1ob6c0m34"]
+[gd_scene load_steps=5 format=3 uid="uid://cnwt1ob6c0m34"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_g5h6u"]
-[ext_resource type="Texture2D" uid="uid://bldocfi7t7xlw" path="res://icon.svg" id="1_iauqm"]
+[ext_resource type="Texture2D" uid="uid://54w1u155nslh" path="res://assets/frames/mario/default.png" id="2_a10oe"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_apgd4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a10oe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nygq2"]
-size = Vector2(121, 123)
+size = Vector2(13, 20)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_g5h6u")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_iauqm")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_apgd4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0.5)
+position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_nygq2")
