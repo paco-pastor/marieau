@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://qya83vfs8xow"]
+[gd_scene load_steps=5 format=3 uid="uid://qya83vfs8xow"]
 
 [ext_resource type="PackedScene" uid="uid://cnwt1ob6c0m34" path="res://scenes/player/player.tscn" id="2_5cylv"]
 [ext_resource type="Texture2D" uid="uid://bldocfi7t7xlw" path="res://icon.svg" id="2_dpdtw"]
+[ext_resource type="PackedScene" uid="uid://dwr2oa05snqsk" path="res://scenes/mushroom/mushroom.tscn" id="3_g1f7d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_krikp"]
 size = Vector2(306, 23)
@@ -26,3 +27,6 @@ zoom = Vector2(4, 4)
 
 [node name="Player" parent="." instance=ExtResource("2_5cylv")]
 position = Vector2(5, 116)
+
+[node name="Mushroom" parent="." instance=ExtResource("3_g1f7d")]
+position = Vector2(115, 137)
