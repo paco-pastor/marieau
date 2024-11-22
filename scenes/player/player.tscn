@@ -21,6 +21,7 @@ size = Vector2(13, 20)
 script = ExtResource("1_g5h6u")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_apgd4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
